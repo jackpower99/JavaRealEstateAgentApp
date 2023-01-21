@@ -1,0 +1,31 @@
+<object-stream>
+  <sample.ListClass>
+    <firstNode>
+      <Data class="sample.Property">
+        <id>2</id>
+        <description>2</description>
+        <address>1</address>
+        <category>Two-Storey</category>
+        <genLocation>Waterford</genLocation>
+        <specLocation>East</specLocation>
+        <Eircode>1</Eircode>
+        <price>1</price>
+      </Data>
+      <next>
+        <Data class="sample.Property">
+          <id>3</id>
+          <description>9</description>
+          <address>3</address>
+          <category>Two-Storey</category>
+          <genLocation>Waterford</genLocation>
+          <specLocation>East</specLocation>
+          <Eircode>1</Eircode>
+          <price>1</price>
+        </Data>
+        <outer-class reference="../../.."/>
+      </next>
+      <outer-class reference="../.."/>
+    </firstNode>
+    <length>2</length>
+  </sample.ListClass>
+</object-stream>

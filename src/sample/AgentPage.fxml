@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AgentPageController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="960.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/first.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableView" layoutX="32.0" layoutY="80.0" onMouseClicked="#userClickedOnTable" prefHeight="236.0" prefWidth="735.0">
+        <columns>
+          <TableColumn fx:id="idColumn" onEditCommit="#changedIdCell" prefWidth="49.5999755859375" text="id" />
+          <TableColumn fx:id="descriptionColumn" onEditCommit="#changedDescriptionCell" prefWidth="82.4000244140625" text="description" />
+            <TableColumn fx:id="addressColumn" prefWidth="75.199951171875" text="address" />
+            <TableColumn fx:id="categoryColumn" prefWidth="78.4000244140625" text="category" />
+            <TableColumn fx:id="countyColumn" prefWidth="79.199951171875" text="county" />
+            <TableColumn fx:id="cityColumn" prefWidth="75.0" text="city" />
+            <TableColumn fx:id="eircodeColumn" prefWidth="64.800048828125" text="eircode" />
+            <TableColumn fx:id="priceColumn" onEditCommit="#changedPriceCell" prefWidth="74.4000122070313" text="price" />
+            <TableColumn fx:id="imageColumn" prefWidth="75.0" text="image" />
+            <TableColumn fx:id="descriptionColumn1" onEditCommit="#changedDescriptionCell" prefWidth="82.4000244140625" text="description" />
+        </columns>
+      </TableView>
+      <TextField fx:id="id" layoutX="108.0" layoutY="394.0" promptText="id" />
+      <TextField fx:id="description" layoutX="108.0" layoutY="420.0" promptText="description" />
+      <TextField fx:id="address" layoutX="108.0" layoutY="446.0" promptText="address" />
+      <TextField fx:id="category" layoutX="108.0" layoutY="472.0" promptText="category" />
+      <TextField fx:id="county" layoutX="400.0" layoutY="394.0" promptText="county" />
+      <TextField fx:id="city" layoutX="400.0" layoutY="420.0" promptText="city" />
+      <TextField fx:id="eircode" layoutX="400.0" layoutY="446.0" promptText="eircode" />
+      <TextField fx:id="price" layoutX="400.0" layoutY="472.0" promptText="price" />
+      <Button layoutX="406.0" layoutY="535.0" mnemonicParsing="false" onAction="#addPropertyBtn" prefHeight="26.0" prefWidth="55.0" text="Add" />
+      <Button layoutX="497.0" layoutY="536.0" mnemonicParsing="false" text="Update" />
+      <Label layoutX="109.0" layoutY="341.0" prefHeight="26.0" prefWidth="319.0" text="Enter Index of Property You want to Delete/Edit">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="index" layoutX="513.0" layoutY="341.0" prefHeight="26.0" prefWidth="38.0" />
+      <TextField fx:id="image" layoutX="400.0" layoutY="498.0" promptText="imageSource" />
+      <Button layoutX="614.0" layoutY="342.0" mnemonicParsing="false" onAction="#editPropertyBtn" prefHeight="26.0" prefWidth="50.0" text="Edit" />
+      <Button layoutX="702.0" layoutY="342.0" mnemonicParsing="false" onAction="#deletePropertyBtn" text="Delete" />
+      <TextArea fx:id="feedback" layoutX="567.0" layoutY="385.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="detailedPropertyViewButton" layoutX="392.0" layoutY="46.0" mnemonicParsing="false" onAction="#changeSceneToDetailedView" text="Detailed" />
+      <Button layoutX="32.0" layoutY="341.0" mnemonicParsing="false" onAction="#savePropertyBtn" prefHeight="26.0" prefWidth="47.0" text="Save" />
+   </children>
+</AnchorPane>

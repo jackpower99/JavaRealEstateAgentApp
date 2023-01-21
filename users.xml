@@ -1,0 +1,14 @@
+<object-stream>
+  <sample.ListClass>
+    <firstNode>
+      <Data class="sample.Agent">
+        <username>Jackpower2</username>
+        <password>00000</password>
+        <name>Jack Power</name>
+        <number>00000</number>
+      </Data>
+      <outer-class reference="../.."/>
+    </firstNode>
+    <length>1</length>
+  </sample.ListClass>
+</object-stream>
